@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="../../static/bootstrap.min.css" rel="stylesheet" />
+
+    <title>Day 1</title>
+  </head>
+  <body>
+    <div class="col-lg-8 mx-auto p-3 py-md-5">
+      <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+        <a
+          href="https://adventofcode.com/2023/day/1"
+          class="d-flex align-items-center text-dark text-decoration-none"
+        >
+          <span class="fs-4">Advent of Code 2023 - Day 1</span>
+        </a>
+      </header>
+      <main>
+        <h5>Brief Summary</h5>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <hr class="col-3 col-md-2 mb-5" />
+
+        <div class="row row-cols-2 g-2">
+          <div class="col">
+            <label for="input_side">Input</label>
+            <textarea
+              class="form-control"
+              id="input_field"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="col">
+            <label for="output_side">Output</label>
+            <textarea
+              class="form-control"
+              id="output_field"
+              rows="10"
+              disabled
+            ></textarea>
+          </div>
+        </div>
+        <a onclick="solve_both()" class="btn btn-primary btn-sm px-4" id="calculate">Recalculate Input</a>
+        <h5>Answer for part 1: <span id="answer_1"></span></h5>
+        <h5>Answer for part 2: <span id="answer_2"></span></h5>
+      </main>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="../../static/bootstrap.bundle.min.js"></script>
+    <!-- Local isntance of P5js -->
+    <script src="../../static/p5.min.js"></script>
+    <!-- JS main entry Point -->
+    <script src="input.js"></script>
+    <script src="day_1.js"></script>
+  </body>
+</html>
