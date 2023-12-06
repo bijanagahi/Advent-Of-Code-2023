@@ -13,18 +13,21 @@
     <div class="col-lg-8 mx-auto p-3 py-md-5">
       <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
         <a
-          href="https://adventofcode.com/2023/day/1"
+          href="/"
           class="d-flex align-items-center text-dark text-decoration-none"
         >
           <span class="fs-4">Advent of Code 2023 - Day 1</span>
         </a>
       </header>
       <main>
-        <h5>Brief Summary</h5>
+        <h5><a 
+            class="d-flex align-items-center text-dark text-decoration-none"
+            target="_blank"
+            href="https://adventofcode.com/2023/day/1"> Problem Summary </a></h5>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         <hr class="col-3 col-md-2 mb-5" />
 
-        <div class="row row-cols-2 g-2">
+        <div class="row row-cols-3 g-2">
           <div class="col">
             <label for="input_side">Input</label>
             <textarea
@@ -34,10 +37,19 @@
             ></textarea>
           </div>
           <div class="col">
-            <label for="output_side">Output</label>
+            <label for="output_side">Output Part 1</label>
             <textarea
               class="form-control"
-              id="output_field"
+              id="output_field_1"
+              rows="10"
+              disabled
+            ></textarea>
+          </div>
+          <div class="col">
+            <label for="output_side">Output Part 2</label>
+            <textarea
+              class="form-control"
+              id="output_field_2"
               rows="10"
               disabled
             ></textarea>
