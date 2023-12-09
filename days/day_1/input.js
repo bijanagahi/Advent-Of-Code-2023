@@ -1,3 +1,17 @@
+const test_input = `1abc2
+pqr3stu8vwx
+a1b2c3d4e5f
+treb7uchet`;
+
+const test_input_2 = `two1nine
+eightwothree
+abcone2threexyz
+xtwone3four
+4nineeightseven2
+zoneight234
+7pqrstsixteen
+28gtbkszmrtmnineoneightmx`;
+
 const my_input = `ninefourone1
 53sevenvvqm
 kscpjfdxp895foureightckjjl1
@@ -998,8 +1012,3 @@ sevenssrzkspld2
 qnzcvcthrsgjlnzxmxlppjdpnine8seven7
 eight7xhvkrcr
 two2tdjdfbqtqxrs119r`;
-
-const test_input = `1abc2
-pqr3stu8vwx
-a1b2c3d4e5f
-treb7uchet`;
