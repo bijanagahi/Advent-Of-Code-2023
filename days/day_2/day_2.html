@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="../../static/bootstrap.min.css" rel="stylesheet" />
+
+    <title>Day 2</title>
+  </head>
+  <body>
+    <div class="col-lg-8 mx-auto p-3 py-md-5">
+      <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+        <a
+          href="/"
+          class="d-flex align-items-center text-dark text-decoration-none"
+        >
+          <span class="fs-4">Advent of Code 2023 - Day 2</span>
+        </a>
+      </header>
+      <main>
+        <h5><a 
+            class="d-flex align-items-center text-dark text-decoration-none"
+            target="_blank"
+            href="https://adventofcode.com/2023/day/2"> Problem Summary </a></h5>
+        Given a number of games of grabbing cubes out of a bag, calculate:
+        <br>
+        - Whether a game is valid or not based on a max set of cubes in the bag
+        <br>
+        - The power of the minumum number of cubes needed per bag
+        <hr class="col-3 col-md-2 mb-5" />
+        <div class="row row-cols-2 g-2">
+            <div class="col-12">
+              <label for="input_side">Input</label>
+              <textarea
+                class="form-control"
+                id="input_field"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="col">
+              <label for="output_side">Output Part 1</label>
+              <textarea
+                class="form-control"
+                id="output_field_1"
+                rows="10"
+                disabled
+              ></textarea>
+            </div>
+            <div class="col">
+              <label for="output_side">Output Part 2</label>
+              <textarea
+                class="form-control"
+                id="output_field_2"
+                rows="10"
+                disabled
+              ></textarea>
+            </div>
+          </div>
+          <a onclick="solve_both()" class="btn btn-primary btn-sm px-4" id="calculate">Recalculate Input</a>
+          <h5>Answer for part 1: <span id="answer_1"></span></h5>
+          <h5>Answer for part 2: <span id="answer_2"></span></h5>
+        </main>
+      </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="../../static/bootstrap.bundle.min.js"></script>
+    <!-- Local isntance of P5js -->
+    <script src="../../static/p5.min.js"></script>
+    <!-- JS main entry Point -->
+    <script src="input.js"></script>
+    <script src="day_2.js"></script>
+  </body>
+</html>

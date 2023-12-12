@@ -1,4 +1,5 @@
-document.getElementById("input_field").value = my_input;
+input_field = document.getElementById("input_field");
+input_field.value = my_input;
 solve_both();
 
 
@@ -30,21 +31,14 @@ function solve_1(){
 
 function solve_2(){
     var lines = document.getElementById("input_field").value.split('\n');
-    let matcher = /([0-9])|(one|two|three|four|five|six|seven|eight|nine)/g
+    let matcher = /(?=([0-9]|one|two|three|four|five|six|seven|eight|nine))/g
     let results = []
     for (let line of lines){
-        let matches = line.match(matcher)
+        let matches = Array.from(line.matchAll(matcher), (m)=>m[1]);
         // start with the first one
-        let first = matches[0]
-        let last = matches.slice(-1)[0] 
-        if (first !== NaN){
-            results.push(maybeInt);
-        }
-        else{
-            results.push()
-        }
-
-        
+        let first = parse(matches[0]);
+        let last = parse(matches.slice(-1)[0]);
+        results.push(`${first}`+`${last}`)
     }
     const answer = results.reduce(
         (accumulator, currentValue) => accumulator + parseInt(currentValue),
@@ -54,6 +48,16 @@ function solve_2(){
     document.getElementById("answer_2").innerHTML = answer;
 }
 
+// Returns an integer regardless of the input (within the scope of this problem obv)
+function parse(req){
+    let maybeInt = parseInt(req);
+    if (!isNaN(maybeInt)){
+        return maybeInt;
+    }
+    return parseString(req);
+}
+
+// No branching babyyyyy
 function parseString(input){
     let char_code = ((input.charCodeAt(0)) ^ (input.charCodeAt(1)))
     return ( 1*(char_code === 1 )) +
