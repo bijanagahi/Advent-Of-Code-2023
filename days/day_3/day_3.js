@@ -96,7 +96,7 @@ function setup() {
             if (partBuilder != '') {
                 // finalize this part
                 if (isValid) {
-                    console.log(partBuilder);
+                    // console.log(partBuilder);
                     valid_parts.push(partBuilder);
                 }
                 partBuilder = ''; // reset the builder
